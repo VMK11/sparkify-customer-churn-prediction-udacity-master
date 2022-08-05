@@ -65,8 +65,8 @@ To improve the performance: <br>
 - Find another way to deal with unbalanced data.
 - Due to time/resources limitations the model is trained is a small subset. The mdoel must be trained using the entire dataset.
 
-## Future Improvements
-Special thanks to:
+## Special thanks to
+
 - https://github.com/LFattorini
 - https://github.com/anand9499
 - https://github.com/drnesr
