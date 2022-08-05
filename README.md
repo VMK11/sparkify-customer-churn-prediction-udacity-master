@@ -9,7 +9,7 @@
 
 The project's **goal** is to provide answers as to:<br>
 
-**Which users are at risk of churn**
+1. Which users are at risk of churn
 
 By **identifying the users before they churn**, Sparkify can **engage with them** the make them a more appealing offer and keep the customer active. That can potentialy reduce the costs of acquiring new customers.
 
