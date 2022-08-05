@@ -63,6 +63,7 @@ To improve the performance: <br>
 
 - Spend more time on hyperparameter tuning.
 - Find another way to deal with unbalanced data.
+- Due to time/resources limitations the model is trained is a small subset. The mdoel must be trained using the entire dataset.
 
 ## Future Improvements
 Special thanks to:
