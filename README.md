@@ -49,8 +49,8 @@ Finally, a **flask based web app** is built where someone can **enter the inform
   - cvModel_gbt.mdl 
     - stages
     - metadata
-  - Sparkify.ipynb # Jupyter notebook that contains detailed data analysis and model building with Spark (Pyspark and SparkML libraries) ran on the small subset
-  - Sparkify_ibm.ipynb # Jupyter notebook that contains the analysis ran using the full available dataset on AWS EMR
+  - Sparkify.ipynb 
+  - Sparkify_ibm.ipynb
 ```
 ## Instructions for running the web app:
 
