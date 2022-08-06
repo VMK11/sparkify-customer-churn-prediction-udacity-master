@@ -15,13 +15,13 @@ By **identifying the users before they churn**, Sparkify can **engage with them*
 
 Due to resouce and time limitations we didn't had the time to train and tune as many models as we would like. As a result, one **binary classification models** was trained , where the target variable is 0 if the customer did not churn and 1 otherwise.
 
-**To conclude to the best model** that enable us to provide an estimation with regard to the user's intention to cancel or not the subscription, the following tasks are complete: <br>
+**To conclude to the best performing model** that enable us to provide an estimation with regard to the user's intention to cancel or not the subscription, the following tasks are complete: <br>
 
-- **Data analysis and pre-processing**
-- **ML Pipeline and experimentation**
-- **Test each model on the test set**
-- **ML Hyperparameter tuning and cross-validation**
-- **ml model peformance evaluation**
+1. **Data analysis and pre-processing**
+2. **ML Pipeline and experimentation**
+3. **Test each model on the test set**
+4. **ML Hyperparameter tuning and cross-validation**
+5. **ml model peformance evaluation**
 
 Finally, a **flask based web app** is built where someone can **enter the information about the user** and get **classification** based on the model prediction
 
