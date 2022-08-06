@@ -3,7 +3,7 @@
 
 ## Project Overview
 
-**Sparkify is a simulated popular music service** similar to Spotify with a **subscription-based business model**. Each user can listen to their favorite music every day either through the **free-tier** plan or by using a **subscription plan where she pays a fixed monthly fee**. Users can **modify their subscription at any time**, so it's critical to know in advance which users are going to cancel their subscription.
+**Sparkify is a simulated popular music service** similar to Spotify. Sparkify is a **subscription-based service** where each user can try out through the **free-tier** plan or by using a **specific subscription plan where someone pays a fixed monthly fee**. The users can **modify or cancel their subscription at any time**, so it's critical to to be able to identify which users are going to cancel their subscription (e.g. churn).
 
 ## Problem Statement
 
@@ -11,18 +11,17 @@ The project's **goal** is to provide answers as to:<br>
 
 1. Which users are at risk of churn
 
-By **identifying the users before they churn**, Sparkify can **engage with them** the make them a more appealing offer and keep the customer active. That can potentialy reduce the costs of acquiring new customers.
+By **identifying the users before they churn**, Sparkify can **engage with them** and make them a more appealing offer and keep the customer active. That can potentialy reduce the costs of acquiring new customers.
 
 Due to resouce and time limitations we didn't had the time to train and tune as many models as we would like. As a result, one **binary classification models** was trained , where the target variable is 0 if the customer did not churn and 1 otherwise.
 
-**To identify the best model** that helps us in predicting customer churn, we complete the following tasks: <br>
+**To conclude to the best model** that enable us to provide an estimation with regard to the user's intention to cancel or not the subscription, the following tasks are complete: <br>
 
-- **Analyze and preprocess the data**
-- **Use Machine learning pipelines**
-- **Train the classifier on the training set**
+- **Data analysis and pre-processing**
+- **ML Pipeline and experimentation**
 - **Test each model on the test set**
-- **Hyperparameter tuning and cross-validation**
-- **Model evaluation**
+- **ML Hyperparameter tuning and cross-validation**
+- **ml model peformance evaluation**
 
 Finally, a **flask based web app** is built where someone can **enter the information about the user** and get **classification** based on the model prediction
 
