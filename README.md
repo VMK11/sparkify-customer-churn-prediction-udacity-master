@@ -25,15 +25,17 @@ In the second step, based on the analysis in the previous step some new features
 The next step includes the ML pipeline creation and experimentation. In this stage, all the necessary data transformation steps are integrated into one pipeline. e.g. string indexer, encoders, assemblers and scalers. 
 
 3. **ML Hyperparameter tuning and cross-validation** 
-The hyper-paramter tuning step includes the process of finding the near-optimal model parameter candidates using data cross-validation. The grid-search method is used to identify which pipeline/model performs the best in terms of performance metrics. 
+The hyper-paramter tuning step includes the process of finding the near-optimal model parameter candidates using data cross-validation. The grid-search and the BinaryClassificationEvaluator emthods were used to identify which pipeline/model performs the best in terms of performance metrics. 
 
 4. **ML Pipeline Performance Evaluationt/Metrics**
-The model's performance is evaluated using the unseen subset of the data e.g. test set. In order to have a more holistic view of the pipeline's performance the confusion matrix, accuracy, precision, recall and f-beta score are used. However, only the confusion matrix and the f-1 score are used in order to evaluate the model's performance.
+The model's performance is evaluated using the unseen subset of the data e.g. test set. In order to have a more holistic view of the pipeline's performance the confusion matrix, accuracy, precision, recall and f-beta score are used. However, due to the highly unbalanced data only the confusion matrix and the f-1 score are used in order to evaluate the model's performance.
 
 5. **Flask-Based Web App** 
 Finally, an app is built where someone can enter the information about the user and get a classification of whether or not that user will chrun or not along with a probability estimate based on the model prediction.
-## Results
 
+## Results
+Random Forrest Classifier were used to predict churn users and got a 76% F1-Score and 57% AUC score.
+You can find detailed steps and results at my medium blog post link https://omarmohyeldin.medium.com/predict-customer-churn-using-pyspark-aa9d1a46f642
 
 ## Installation
 
@@ -67,15 +69,13 @@ Finally, an app is built where someone can enter the information about the user 
 
 ## Improvements
 
-To improve the performance: 
-Due to resouce and time limitations we didn't had the time to train and tune as many models as we would like. As a result, one **binary classification models** was trained , where the target variable is 0 if the customer did not churn and 1 otherwise.
-
+- Use the entire dataset for training - Due to resouce and time limitations we didn't had the time to train and tune as many models as we would like.
 - Spend more time on hyperparameter tuning.
 - Find another way to deal with unbalanced data.
 - Due to time/resources limitations the model is trained is a small subset. The mdoel must be trained using the entire dataset.
 
 ## Conclusion/Reflection
-
+Over all the project was demanding in terms of data clearning and feature engineering. It was challenging to think about which user attributes to experiment with and what kinf of newly engineered features could provide predictive importance in the model. However, the real challenge came with the resources, the data preparation and modelling took a substancial amount of time ever during experimentation. That includes bith the IBM Watson Studio virtual machine and the Udacity workspace.
 
 ## Special thanks to
 
