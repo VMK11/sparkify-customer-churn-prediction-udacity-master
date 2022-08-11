@@ -19,7 +19,7 @@ In order to solve the problem the strategy below is followed:
 A basic pre-processing and an analysis of the data is performed. From that initial step, a basic data cleaning is performed e.g.  null value investigation and handling and questions like which customers churn the most, what is their gender, from which country, do they have premium or trial membership, etc. are answered. The goal was to gain a better understanding of the customer's behaviour and the data.
 
 2. **Feature Engineering** 
-In the second step, based on the analysis in the previous step some new features were created (feature engineering). e.g. the user's country, time feature, etc.
+In the second step, based on the analysis in the previous step some new features were created (feature engineering). e.g. the user's state, avg_songs_per_day, time feature transformation, etc.
 
 3. **Pipeline Creation & Experimentation** 
 The next step includes the ML pipeline creation and experimentation. In this stage, all the necessary data transformation steps are integrated into one pipeline. e.g. string indexer, encoders, assemblers and scalers. 
