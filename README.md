@@ -34,7 +34,7 @@ The model's performance is evaluated using the unseen subset of the data e.g. te
 Finally, an app is built where someone can enter the information about the user and get a classification of whether or not that user will chrun or not along with a probability estimate based on the model prediction.
 
 ## Results
-The GBTClassifier were used to predict churn users and got the following performance:
+The GBTClassifier were used to predict churn users and got the following performance - Consider the low performance because of the lack of time and computational resources:
 
 Accuracy: 0.7658227848101266
 Precision: 1.0
