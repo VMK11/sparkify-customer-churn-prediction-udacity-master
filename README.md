@@ -34,8 +34,16 @@ The model's performance is evaluated using the unseen subset of the data e.g. te
 Finally, an app is built where someone can enter the information about the user and get a classification of whether or not that user will chrun or not along with a probability estimate based on the model prediction.
 
 ## Results
-Random Forrest Classifier were used to predict churn users and got a 76% F1-Score and 57% AUC score.
-You can find detailed steps and results at my medium blog post link https://omarmohyeldin.medium.com/predict-customer-churn-using-pyspark-aa9d1a46f642
+The GBTClassifier were used to predict churn users and got the following performance:
+
+Accuracy: 0.7658227848101266
+Precision: 1.0
+Recall: 0.05128205128205128
+F1 Score: 0.09756097560975609
+
+You can find detailed steps and results:
+- In the WebApp screenshots:    https://github.com/VMK11/sparkify-customer-churn-prediction-udacity-master/tree/master/WebApp%20Screenshots
+- In the notebook github repo:  https://github.com/VMK11/sparkify-customer-churn-prediction-udacity-master/blob/master/Sparkify.ipynb
 
 ## Installation
 
@@ -67,11 +75,12 @@ You can find detailed steps and results at my medium blog post link https://omar
 1. Run the following command **in the app's directory** to run the web app. `python run.py`
 2. Go to http://0.0.0.0:3001/ to see the web app. # the port depends on the execution.
 
-## Improvements
+## Improvements/Limitations
 
 - Use the entire dataset for training - Due to resouce and time limitations we didn't had the time to train and tune as many models as we would like.
 - Spend more time on hyperparameter tuning.
 - Find another way to deal with unbalanced data.
+- Couldn't use the ppscore package - Power Predictive Score is a bivariate analysis
 - Due to time/resources limitations the model is trained is a small subset. The mdoel must be trained using the entire dataset.
 
 ## Conclusion/Reflection
